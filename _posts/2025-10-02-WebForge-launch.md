@@ -2,7 +2,7 @@
 layout: post
 title: "WebForge Launch Day"
 author: "Sumit Marandi"
-date: 2025-10-02 10:00:00 +0530
+date: 2025-10-10 10:00:00 +0530
 ---
 
 # WebForge Launch Day 🎊
