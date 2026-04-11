@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Welcome to myBlog"
+title: "WebForge Launch Day"
 author: "Sumit Marandi"
 date: 2025-10-02 10:00:00 +0530
 ---
