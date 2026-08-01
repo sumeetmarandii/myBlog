@@ -46,4 +46,4 @@ Let's build something amazing together!
 
 - **Reach out** at [sm@marandi.in](mailto:sm@marandi.in) if something resonates or if you have questions
 - **Share topics** you'd like me to explore — I'm always looking for interesting problems to dive into
-- **Connect with me** on [GitHub](https://github.com/sumitmarandi) to see what I'm building
+- **Connect with me** on [GitHub](https://github.com/sumeetmarandii) to see what I'm building
