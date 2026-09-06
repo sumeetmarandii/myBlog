@@ -76,7 +76,7 @@ As a computer science engineer, my journey in technology has been filled with:
 I love connecting with fellow developers, tech enthusiasts, and anyone passionate about technology. Feel free to reach out!
 
 ### Find Me Online
-- 🐙 **GitHub**: [github.com/sumitmarandi](https://github.com/sumeetmarandii) – Check out my projects and contributions
+- 🐙 **GitHub**: [github.com/sumeetmarandii](https://github.com/sumeetmarandii) – Check out my projects and contributions
 - 🌐 **Portfolio**: [sumeetmarandii](https://github.com/sumeetmarandii) – My personal website with more details
 - 📧 **Email**: [sm@marandi.in](mailto:sm@marandi.in) – Always open to interesting conversations
 - 🛜 **X** (Formerly twitter): [sumeetmarandii](https://www.x.com/sumeetmarandii) – My personal website with more details
