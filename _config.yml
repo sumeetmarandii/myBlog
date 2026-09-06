@@ -5,7 +5,7 @@ description: >-
 # If deploying as a project site, set your username and repo below
 # and keep baseurl. For a user/organization site (username.github.io),
 # set baseurl to empty and update url accordingly.
-url: "https://sumitmarandi.github.io"
+url: "https://sumeetmarandii.github.io"
 baseurl: "/myBlog"
 
 # Build settings
@@ -26,5 +26,5 @@ exclude:
 # Custom site variables
 author:
   name: Sumit Marandi
-  url: https://sumitmarandi.github.io
+  url: https://sumeetmarandii.github.io
   email: sm@marandi.in

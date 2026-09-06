@@ -13,7 +13,7 @@ Hi 👋, I'm **Sumit Marandi** – a passionate fullstack developer and computer
 I'm a computer science engineer with a love for building things that make a difference. Currently working as a fullstack developer, I enjoy the entire spectrum of software development – from crafting beautiful user interfaces to architecting robust backend systems.
 
 ### What I Do
-- 🔭 **Currently working on** [unpost club](https://github.com/SumitMarandi) – an exciting project that I'm passionate about
+- 🔭 **Currently working on** [zerofy](https://zerofy.me) – an exciting project that I'm passionate about
 - 🌱 **Always learning** React, Expo, MongoDB, Docker, and exploring new technologies
 - 📝 **Writing** technical articles and sharing knowledge with the community
 - 💻 **Building** fullstack applications and contributing to open-source projects
@@ -76,12 +76,12 @@ As a computer science engineer, my journey in technology has been filled with:
 I love connecting with fellow developers, tech enthusiasts, and anyone passionate about technology. Feel free to reach out!
 
 ### Find Me Online
-- 🐙 **GitHub**: [github.com/sumitmarandi](https://github.com/sumitmarandi) – Check out my projects and contributions
-- 🌐 **Portfolio**: [sumitmarandi.me](https://www.sumitmarandi.me) – My personal website with more details
+- 🐙 **GitHub**: [github.com/sumitmarandi](https://github.com/sumeetmarandii) – Check out my projects and contributions
+- 🌐 **Portfolio**: [sumeetmarandii](https://github.com/sumeetmarandii) – My personal website with more details
 - 📧 **Email**: [sm@marandi.in](mailto:sm@marandi.in) – Always open to interesting conversations
-- 🛜 **X** (Formerly twitter): [sumitmarandi47](https://www.x.com/sumitmarandi47) – My personal website with more details
-- Ⰶ **Instagram**: [sumitmarandi_](https://www.instagram.com/sumitmarandi_) – My personal website with more details
-- 🐥 **FaceBook**: [sumitmarandi17](https://www.facebook.com/sumitmarandi17) – My personal website with more details
+- 🛜 **X** (Formerly twitter): [sumeetmarandii](https://www.x.com/sumeetmarandii) – My personal website with more details
+- Ⰶ **Instagram**: [sumeetmarandii](https://www.instagram.com/sumeetmarandii) – My personal website with more details
+- 🐥 **FaceBook**: [sumeetmarandii](https://www.facebook.com/sumeetmarandii) – My personal website with more details
 
 
 ### Collaboration
