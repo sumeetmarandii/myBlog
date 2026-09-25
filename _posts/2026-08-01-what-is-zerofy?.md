@@ -5,7 +5,7 @@ author: "Sumit Marandi"
 date: 2026-08-01 13:14:00 +0530
 ---
 
-![ZeroFy logo](/assets/images/zerofy.webp)
+![ZeroFy logo]({{ '/assets/images/zerofy.webp' | relative_url }})
 
 # What is ZeroFy? 🌐
 
