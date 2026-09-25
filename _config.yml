@@ -10,7 +10,13 @@ baseurl: "/myBlog"
 
 # Build settings
 markdown: kramdown
-theme: null
+# No `theme:` gem here on purpose — the retro look ships inside this repo
+# (_layouts, _includes, assets/css), so the build stays valid on GitHub Pages.
+#
+# Colour mode shown before a visitor picks one: light | dark | system
+# "system" follows the operating system's light/dark setting.
+default_theme: system
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

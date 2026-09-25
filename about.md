@@ -4,9 +4,21 @@ title: About | Sumit Marandi
 permalink: /about/
 ---
 
-# About Me
+<div class="about-intro">
+  <picture>
+    <source srcset="{{ '/assets/images/sumit_marandi.webp' | relative_url }}" type="image/webp">
+    <img src="{{ '/assets/images/sumit_marandi.jpg' | relative_url }}"
+         alt="Sumit Marandi, fullstack developer and computer science engineer"
+         class="about-photo"
+         width="800" height="1170"
+         decoding="async">
+  </picture>
 
-Hi 👋, I'm **Sumit Marandi** – a passionate fullstack developer and computer science engineer from India. Welcome to my digital space where I share my journey, experiences, thoughts, and insights from the world of technology.
+  <div class="about-intro-text">
+    <h1>About Me</h1>
+    <p>Hi 👋, I'm <strong>Sumit Marandi</strong> – a passionate fullstack developer and computer science engineer from India. Welcome to my digital space where I share my journey, experiences, thoughts, and insights from the world of technology.</p>
+  </div>
+</div>
 
 ## 🚀 Who Am I?
 
