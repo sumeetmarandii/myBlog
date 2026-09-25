@@ -10,9 +10,15 @@ baseurl: "/myBlog"
 
 # Build settings
 markdown: kramdown
-# No `theme:` gem here on purpose — the retro look ships inside this repo
-# (_layouts, _includes, assets/css), so the build stays valid on GitHub Pages.
-#
+
+# CRITICAL: keep `theme: null`.
+# The github-pages gem defaults to "theme: jekyll-theme-primer" whenever no
+# `theme:` key is present. That theme ships its own assets/css/style.css, which
+# collides with the retro theme in this repo and overwrites it in _site
+# depending on write order — the site then flips between retro and Bootstrap
+# between builds. An explicit `theme: null` is the documented way to disable it.
+theme: null
+
 # Colour mode shown before a visitor picks one: light | dark | system
 # "system" follows the operating system's light/dark setting.
 default_theme: system
