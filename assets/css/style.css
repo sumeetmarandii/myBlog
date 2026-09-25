@@ -305,7 +305,7 @@ blockquote {
 }
 
 .post-content img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border: 2px solid var(--border);
   border-radius: var(--radius);

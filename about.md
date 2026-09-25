@@ -6,8 +6,8 @@ permalink: /about/
 
 <div class="about-intro">
   <picture>
-    <source srcset="{{ '/assets/images/sumit_marandi.webp' | relative_url }}" type="image/webp">
-    <img src="{{ '/assets/images/sumit_marandi.jpg' | relative_url }}"
+    <source srcset="{{ '/assets/about/sumit_marandi.webp' | relative_url }}" type="image/webp">
+    <img src="{{ '/assets/about/sumit_marandi.webp' | relative_url }}"
          alt="Sumit Marandi, fullstack developer and computer science engineer"
          class="about-photo"
          width="800" height="1170"
@@ -126,4 +126,4 @@ I believe in:
 
 *Thank you for taking the time to learn about me! I hope you find valuable content here, and I look forward to connecting with you. Happy coding!* 🚀
 
-*Last updated: October 2025*
+*Last updated: September 2026*

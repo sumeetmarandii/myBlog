@@ -5,6 +5,8 @@ author: "Sumit Marandi"
 date: 2026-08-01 13:14:00 +0530
 ---
 
+![ZeroFy logo](/assets/images/zerofy.webp)
+
 # What is ZeroFy? 🌐
 
 ZeroFy is a simple digital service for businesses and creators who want a clean, modern website without the usual complexity.
