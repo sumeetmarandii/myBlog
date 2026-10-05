@@ -57,11 +57,13 @@
 
 /* ---------- Reset + base ---------- */
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background: var(--bg); }
 html, body { margin: 0; padding: 0; }
 
 body {
-  background: var(--bg);
+  /* Transparent so the fixed live-background canvas painted by
+     assets/js/live-bg.js shows through; <html> carries the colour. */
+  background: transparent;
   color: var(--text);
   font-family: var(--font-body);
   font-size: 20px;
@@ -82,6 +84,26 @@ body::after {
     transparent 1px 3px
   );
 }
+
+/* ---------- Live background (assets/js/live-bg.js) ----------
+   A fixed canvas sits at z-index -1, i.e. above <html>'s colour but below all
+   content. `body` is transparent so it shows through. The canvas is created
+   opaque black, so it stays hidden until the script paints it and adds
+   .is-ready — that is what stops a dark flash on first paint. The pause/play
+   button in the header switches the whole thing off and remembers the choice.
+   -------------------------------------------------------------------------- */
+.live-bg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: block;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.live-bg.is-ready { opacity: 1; }
 
 a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -153,8 +175,9 @@ a:hover { text-decoration: underline; }
   text-decoration: none;
 }
 
-/* ---------- Theme toggle (light / dark / system) ---------- */
-.theme-toggle {
+/* ---------- Theme toggle (light / dark / system) + motion toggle ---------- */
+.theme-toggle,
+.motion-toggle {
   display: inline-flex;
   align-items: center;
   gap: 2px;
@@ -165,7 +188,8 @@ a:hover { text-decoration: underline; }
   box-shadow: 3px 3px 0 var(--shadow);
 }
 
-.theme-toggle-btn {
+.theme-toggle-btn,
+.motion-toggle-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -180,11 +204,23 @@ a:hover { text-decoration: underline; }
   font-family: var(--font-body);
   transition: background-color 0.18s ease, color 0.18s ease;
 }
-.theme-toggle-btn:hover { color: var(--primary); }
-.theme-toggle-btn svg { width: 17px; height: 17px; display: block; }
+.theme-toggle-btn:hover,
+.motion-toggle-btn:hover { color: var(--primary); }
+.theme-toggle-btn svg,
+.motion-toggle-btn svg { width: 17px; height: 17px; display: block; }
 .theme-toggle-btn[aria-pressed="true"] {
   background: var(--primary);
   color: var(--panel);
+}
+
+/* Motion button swaps between pause (animating) and play (paused), and
+   highlights itself only while the animation is stopped. */
+.motion-toggle-btn .icon-play { display: none; }
+.motion-toggle-btn[aria-pressed="false"] .icon-pause { display: none; }
+.motion-toggle-btn[aria-pressed="false"] .icon-play { display: block; }
+.motion-toggle-btn[aria-pressed="false"] {
+  background: var(--wash);
+  color: var(--primary);
 }
 
 .visually-hidden {
@@ -446,6 +482,44 @@ pre code { background: none; padding: 0; font-size: 1em; }
   .share-btn svg { width: 15px; height: 15px; }
 
   .post-list li { padding: 14px 16px; }
+}
+
+/* Narrow phones: the wordmark and the control cluster stop fitting on one row.
+   Rather than letting the nav wrap and hug the left edge — which reads as
+   broken — the header stacks on purpose: centred wordmark on top, then a
+   full-width bar with the nav link left and the toggles right. */
+@media (max-width: 430px) {
+  .site-header { padding: 12px 0; }
+  .site-header .container {
+    row-gap: 10px;
+    justify-content: center;
+  }
+  /* The flex item is the <h1>; .site-title is the link inside it. */
+  .site-header .container > h1 {
+    flex: 1 0 100%;
+    text-align: center;
+  }
+  .site-title { font-size: 1.9rem; }
+  .site-nav {
+    flex: 1 0 100%;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  /* The controls now own a full row, so give them proper touch targets. */
+  .theme-toggle-btn,
+  .motion-toggle-btn { width: 42px; height: 38px; }
+  .theme-toggle-btn svg,
+  .motion-toggle-btn svg { width: 19px; height: 19px; }
+  .site-nav a { font-size: 0.78rem; padding: 8px 12px; }
+}
+
+/* Very narrow phones (320px class): trim the controls just enough that the
+   nav bar's intrinsic width still fits inside the container padding. */
+@media (max-width: 360px) {
+  .theme-toggle-btn,
+  .motion-toggle-btn { width: 38px; height: 36px; }
+  .site-nav { gap: 6px; }
+  .site-nav a { padding: 8px 10px; }
 }
 
 /* ---------- Respect reduced-motion ---------- */
